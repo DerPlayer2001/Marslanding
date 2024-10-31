@@ -1,0 +1,21 @@
+services:
+  game:
+    build: ./
+    container_name: mars-game
+    restart: unless-stopped
+    ports:
+      - 80:80
+  backend:
+    build: ./backend
+    container_name: mars-backend
+    restart: unless-stopped
+    ports:
+      - 81:80
+    environment:
+      - DB_URL=mars-database
+  database:
+    build: ./database
+    container_name: mars-database
+    restart: unless-stopped
+    environment:
+      - POSTGRES_PASSWORD=CHANGE_ME

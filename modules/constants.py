@@ -1,0 +1,3 @@
+# Constants used in the simulation
+GRAVITATIONAL_CONSTANT = 6.67428e-11
+GAS_CONSTANT = 8.314462618

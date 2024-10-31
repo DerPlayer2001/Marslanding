@@ -1,0 +1,11 @@
+.vscode/
+.git/
+.gitignore
+README.md
+Math.ipynb
+**/__pycache__/
+build/
+database/
+backend/
+test.py
+Praesentation/
